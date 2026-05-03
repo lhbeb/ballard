@@ -175,8 +175,8 @@ export default function EditProductPage() {
                             </div>
                         )}
                     </div>
-                    </div>
                 </div>
+
 
                 {/* Digital Product File */}
                 {isFree && (
