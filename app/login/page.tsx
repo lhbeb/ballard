@@ -20,7 +20,7 @@ export default function LoginPage() {
         // Artificial delay for UX
         await new Promise(r => setTimeout(r, 600))
 
-        if (email === 'arvaradodotcom@gmail.com' && password === 'Localserver!!2') {
+        if (email === 'elmahboubimehdi@gmail.com' && password === 'Localserver!!2') {
             document.cookie = "admin_session=true; path=/; max-age=86400" // 24-hour cookie
             router.push('/admin')
             router.refresh()
@@ -62,7 +62,7 @@ export default function LoginPage() {
                                 onChange={e => setEmail(e.target.value)}
                                 disabled={loading}
                                 required
-                                placeholder="arvaradodotcom@gmail.com"
+                                placeholder="elmahboubimehdi@gmail.com"
                                 className="w-full bg-[#f5f6f8] border border-[#e5e7eb] focus:border-[#3b82f6] rounded-xl pl-11 pr-4 py-3 text-gray-900 placeholder-gray-400 outline-none transition-colors"
                             />
                         </div>
