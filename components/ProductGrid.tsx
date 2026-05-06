@@ -165,7 +165,7 @@ function ProductGridContent({
                         <h3 className="text-lg font-bold text-gray-900">Free</h3>
                         <span className="text-xs text-gray-500 bg-[#f5f6f8] border border-[#e5e7eb] rounded-full px-2 py-0.5">{freeProducts.length}</span>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         {freeProducts.map((product) => (
                             <ProductCard key={product.id} product={product} />
                         ))}
@@ -181,7 +181,7 @@ function ProductGridContent({
                         <h3 className="text-lg font-bold text-gray-900">Premium</h3>
                         <span className="text-xs text-gray-500 bg-[#f5f6f8] border border-[#e5e7eb] rounded-full px-2 py-0.5">{paidProducts.length}</span>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         {paidProducts.map((product) => (
                             <ProductCard key={product.id} product={product} />
                         ))}

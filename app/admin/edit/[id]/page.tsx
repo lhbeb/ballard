@@ -163,7 +163,8 @@ export default function EditProductPage() {
                         ))}
                         {newImagePreviews.map((url, idx) => (
                             <div key={`new-${idx}`} className="relative w-24 h-24 rounded-xl overflow-hidden bg-[#f5f6f8] border border-[#e5e7eb] flex-shrink-0 group">
-                                <Image src={url} alt={`New Image ${idx + 1}`} fill className="object-cover" />
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src={url} alt={`New Image ${idx + 1}`} className="object-cover w-full h-full" />
                                 <button type="button" onClick={() => removeNewImage(idx)} className="absolute top-1 right-1 bg-black/70 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 hover:bg-red-500 transition-all"><X size={12} /></button>
                                 <div className="absolute bottom-0 inset-x-0 bg-black/50 text-white text-[10px] text-center py-0.5">New</div>
                             </div>
