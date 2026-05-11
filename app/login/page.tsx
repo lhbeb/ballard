@@ -62,7 +62,7 @@ export default function LoginPage() {
                                 onChange={e => setEmail(e.target.value)}
                                 disabled={loading}
                                 required
-                                placeholder="elmahboubimehdi@gmail.com"
+                                placeholder="Enter your email"
                                 className="w-full bg-[#f5f6f8] border border-[#e5e7eb] focus:border-[#3b82f6] rounded-xl pl-11 pr-4 py-3 text-gray-900 placeholder-gray-400 outline-none transition-colors"
                             />
                         </div>
